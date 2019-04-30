@@ -12,7 +12,7 @@ See a live demo [here](https://youtu.be/QBt5-Dulbek).
 * This breaks the flow and looks _phishy_ to users, which will act as a barrier to entry.
 
 ## Problems
-####Using the native flow, sign-up worked right away, but logging in kept failing, so I:
+#### Using the native flow, sign-up worked right away, but logging in kept failing, so I:
 1. Added `onError` callback to get more information. Simply got message `couldNotLogin`... not helpful.
 2. Searched for `couldNotLogin` in [Lock.swift](https://github.com/auth0/Lock.swift) code to get more info... wasn't helpful.
 3. Added a breakpoint to see where in `Lock` the error was happening... didn't go anywhere.
