@@ -2,6 +2,8 @@
 
 Frontend Tech Challenge prepared by Phill Aitken for Laurent Parent and [Wellthon](http://www.wellthon.com).
 
+See a live demo [here](https://youtu.be/QBt5-Dulbek).
+
 ## Choices
 * [Auth0](http://www.auth0.com) presents two options out of the box: native and web. I sampled both flows and found that I preferred the native flow because with the web flow, iOS (for security reasons) forces the user to agree to the following message:
 
