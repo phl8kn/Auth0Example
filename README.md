@@ -32,3 +32,12 @@ See a live demo [here](https://youtu.be/QBt5-Dulbek).
 * [Documentation](https://auth0.com/docs/quickstart/native/ios-swift)
 * [Community](https://community.auth0.com/)
 * [Sample Code](https://github.com/auth0-samples/auth0-ios-swift-sample)
+
+### Built with
+* XCode 10.1 (10B61)
+* macOS 10.13.6
+* MacBook Pro (15-inch, 2017)
+
+### Running on
+* iPhone X
+* iOS 12.0
