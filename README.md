@@ -4,7 +4,9 @@ Frontend Tech Challenge prepared by Phill Aitken for Laurent Parent and [Welltho
 
 ## Choices
 * Auth0 present two options out of the box, native and web. I sampled both flows and found that I preferred the native flow because with the web flow, iOS (for security reasons) forces the user to agree to the following message:
+
 ![Web Flow](http://www.whyiloveandrea.com/assets/auth0-web-flow-screenshot.png)
+
 * This breaks the flow and looks _phishy_ to users, which will act as a barrier to entry.
 
 ## Problems
