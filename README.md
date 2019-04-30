@@ -1,6 +1,6 @@
 # Auth0Example
 
-Frontend Tech Challenge prepared by Phill Aitken for Laurent Parent and [Wellthon](http://www.wellthon.com).
+Frontend Tech Challenge prepared by Phill Aitken for Laurent Parenteau and [Wellthon](http://www.wellthon.com).
 
 See a live demo [here](https://youtu.be/QBt5-Dulbek).
 
@@ -26,6 +26,7 @@ See a live demo [here](https://youtu.be/QBt5-Dulbek).
 * Allow user to make profile changes.
 * Save credentials using `CloudKit` to sync credentials between user's many devices.
 * Add unit tests.
+* Test on multiple devices and iPad.
 
 ### Resources
 * [Documentation](https://auth0.com/docs/quickstart/native/ios-swift)
