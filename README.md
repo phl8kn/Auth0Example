@@ -21,7 +21,6 @@ See a live demo [here](https://youtu.be/QBt5-Dulbek).
 6. Found [this](https://community.auth0.com/t/error-grant-type-password-not-allowed-for-the-client-for-resource-owner-password-flow/6951) page in the Auth0 Community Forums which allowed me to solve the problem.
 
 ## Paths for improvement
-* See all the `TODO` comments for places marked for improvement.
 * Move much of the logic from the `MainViewController` into a management class.
 * Improve flexibility of animations and UI.
 * Allow user to make profile changes.

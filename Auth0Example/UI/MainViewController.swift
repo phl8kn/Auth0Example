@@ -101,7 +101,6 @@ class MainViewController: UIViewController {
                 Logger.log("credentials (from manager): \(String(describing: self.credentials))")
             case .failure:
                 Logger.log("No saved credentials found")
-                // TODO: Animate to first time user experience
                 self.showFirstTimeExperience()
             }
         }
@@ -113,7 +112,7 @@ class MainViewController: UIViewController {
         case let navViewController as UINavigationController:
             switch navViewController.topViewController {
             case let profileViewController as ProfileViewController:
-                // Prep the ProfileViewController TODO: Create a viewmodel from the `profile` object
+                // Prep the ProfileViewController 
                 profileViewController.profile = self.profile
                 profileViewController.delegate = self
             default:
@@ -296,8 +295,6 @@ class MainViewController: UIViewController {
                         self.showUserProfile()
                     case .failure(let error):
                         self.userProfileNotFound()
-                        // TODO: Handle the error
-                        Logger.log("getUserProfile: (\(type(of: error)) -> \(error)")
                     }
                 }
             }

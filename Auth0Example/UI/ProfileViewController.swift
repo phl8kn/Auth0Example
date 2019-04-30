@@ -13,7 +13,6 @@ import Auth0
 /// To notify `MainViewController` of profile based operations
 protocol ProfileViewControllerDelegate: class {
     func onLogoutRequested(_ callback: @escaping (_ success: Bool) -> Void)
-    // TODO: Add ability for user to make changes to their profile, e.g. profile image, name, etc...
 }
 
 
