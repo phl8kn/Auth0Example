@@ -293,7 +293,7 @@ class MainViewController: UIViewController {
                     case .success(let profile):
                         self.profile = profile
                         self.showUserProfile()
-                    case .failure(let error):
+                    case .failure:
                         self.userProfileNotFound()
                     }
                 }

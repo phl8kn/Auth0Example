@@ -34,6 +34,7 @@ See a live demo [here](https://youtu.be/QBt5-Dulbek).
 
 ### Built with
 * XCode 10.1 (10B61)
+* CocoaPods 1.6.1 ([Lock](https://cocoapods.org/pods/Lock), [Auth0](https://cocoapods.org/pods/Auth0))
 * macOS 10.13.6
 * MacBook Pro (15-inch, 2017)
 
