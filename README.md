@@ -28,3 +28,7 @@ See a live demo [here](https://youtu.be/QBt5-Dulbek).
 * Save credentials using `CloudKit` to sync credentials between user's many devices.
 * Add unit tests.
 
+### Resources
+* [Documentation](https://auth0.com/docs/quickstart/native/ios-swift)
+* [Community](https://community.auth0.com/)
+* [Sample Code](https://github.com/auth0-samples/auth0-ios-swift-sample)
