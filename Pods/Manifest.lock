@@ -1,0 +1,28 @@
+PODS:
+  - Auth0 (1.15.0):
+    - SimpleKeychain
+  - Lock (2.10.0):
+    - Auth0 (~> 1.13)
+    - Lock/Classic (= 2.10.0)
+  - Lock/Classic (2.10.0):
+    - Auth0 (~> 1.13)
+  - SimpleKeychain (0.9.0)
+
+DEPENDENCIES:
+  - Auth0 (~> 1.15)
+  - Lock (~> 2.10)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Auth0
+    - Lock
+    - SimpleKeychain
+
+SPEC CHECKSUMS:
+  Auth0: b741c805711a80eb698fce55d354cc32e0784dce
+  Lock: f0c3c7bc730b3a161febc0ed304dbae6e2e03c1a
+  SimpleKeychain: 3be49072fd2d82de8fa83d847ef1e548622f8fc5
+
+PODFILE CHECKSUM: 33d4af90f759d4640d553aae7f9f6ef968354c18
+
+COCOAPODS: 1.6.1

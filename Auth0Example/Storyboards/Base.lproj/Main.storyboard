@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Auth0Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pD6-X4-Hg3">
+                                <rect key="frame" x="24" y="613" width="327" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5Ui-gC-LcG"/>
+                                </constraints>
+                                <state key="normal" title="Log In"/>
+                                <connections>
+                                    <action selector="onLoginRequested:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oxW-wl-z6x"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wellthon_logo" translatesAutoresizingMaskIntoConstraints="NO" id="r3U-70-krY">
+                                <rect key="frame" x="48" y="283.5" width="279" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="MjM-Ez-QZf"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👋  Hi there.  Please login or create an account to begin." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpu-Xz-RvP">
+                                <rect key="frame" x="24" y="427.5" width="327" height="161.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Gsm-MF-gEJ">
+                                <rect key="frame" x="169" y="490" width="37" height="37"/>
+                                <color key="color" name="primary_color"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="rpu-Xz-RvP" secondAttribute="trailing" constant="24" id="2yo-zQ-S2f"/>
+                            <constraint firstItem="rpu-Xz-RvP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="24" id="8H2-eD-xeJ"/>
+                            <constraint firstItem="r3U-70-krY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="CHd-qj-Mvt"/>
+                            <constraint firstItem="r3U-70-krY" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Dfm-QG-i16"/>
+                            <constraint firstItem="r3U-70-krY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="48" id="Hss-yJ-nOZ"/>
+                            <constraint firstItem="pD6-X4-Hg3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="NAG-Dq-bg5"/>
+                            <constraint firstItem="pD6-X4-Hg3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Qzh-ec-cBj"/>
+                            <constraint firstItem="rpu-Xz-RvP" firstAttribute="top" secondItem="r3U-70-krY" secondAttribute="bottom" constant="24" id="ZbW-Fj-rYP"/>
+                            <constraint firstItem="pD6-X4-Hg3" firstAttribute="top" secondItem="rpu-Xz-RvP" secondAttribute="bottom" constant="24" id="axO-V9-kIU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pD6-X4-Hg3" secondAttribute="bottom" constant="24" id="cvT-1h-kAA"/>
+                            <constraint firstItem="Gsm-MF-gEJ" firstAttribute="centerY" secondItem="rpu-Xz-RvP" secondAttribute="centerY" id="iMD-Hm-THx"/>
+                            <constraint firstItem="Gsm-MF-gEJ" firstAttribute="centerX" secondItem="rpu-Xz-RvP" secondAttribute="centerX" id="pxe-US-WkQ"/>
+                            <constraint firstAttribute="trailing" secondItem="r3U-70-krY" secondAttribute="trailing" constant="48" id="yic-Q1-XUv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="Gsm-MF-gEJ" id="ueC-Vg-MDj"/>
+                        <outlet property="introLabel" destination="rpu-Xz-RvP" id="aeA-UE-ReQ"/>
+                        <outlet property="loginButton" destination="pD6-X4-Hg3" id="e5s-5P-5jc"/>
+                        <outlet property="verticalConstraint" destination="Dfm-QG-i16" id="03D-As-9Rs"/>
+                        <segue destination="Rcp-KR-LbJ" kind="presentation" identifier="ProfileSegue" modalTransitionStyle="crossDissolve" id="PEg-dI-eFx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="669.60000000000002" y="25.637181409295355"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="Z7H-2R-2ys">
+            <objects>
+                <viewController id="Oxj-AI-LWZ" customClass="ProfileViewController" customModule="Auth0Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kFG-JZ-3Z6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sd4-pZ-T6d" customClass="RoundedImageView" customModule="Auth0Example" customModuleProvider="target">
+                                <rect key="frame" x="67.5" y="213.5" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="aJr-Rw-Wod"/>
+                                    <constraint firstAttribute="width" constant="240" id="aKa-WW-KNQ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="120"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="primary_color"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlT-BL-v2S">
+                                <rect key="frame" x="160" y="613" width="55" height="30"/>
+                                <state key="normal" title="Log Out"/>
+                                <connections>
+                                    <action selector="onLogoutRequested:" destination="Oxj-AI-LWZ" eventType="touchUpInside" id="4Bn-SI-V62"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="evC-a4-v66">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <color key="color" name="primary_color"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sd4-pZ-T6d" firstAttribute="centerX" secondItem="kFG-JZ-3Z6" secondAttribute="centerX" id="PWB-GU-cO2"/>
+                            <constraint firstItem="qlT-BL-v2S" firstAttribute="centerX" secondItem="WeY-Wo-ctA" secondAttribute="centerX" id="YxL-xS-vOj"/>
+                            <constraint firstItem="sd4-pZ-T6d" firstAttribute="centerY" secondItem="kFG-JZ-3Z6" secondAttribute="centerY" id="a3q-Xd-5sH"/>
+                            <constraint firstItem="evC-a4-v66" firstAttribute="centerY" secondItem="sd4-pZ-T6d" secondAttribute="centerY" id="hrU-7I-3e5"/>
+                            <constraint firstItem="evC-a4-v66" firstAttribute="centerX" secondItem="sd4-pZ-T6d" secondAttribute="centerX" id="iw3-CI-9Ju"/>
+                            <constraint firstItem="WeY-Wo-ctA" firstAttribute="bottom" secondItem="qlT-BL-v2S" secondAttribute="bottom" constant="24" id="tlQ-cR-HuN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WeY-Wo-ctA"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zrg-oh-Yxd"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="evC-a4-v66" id="B9Q-vG-Cqy"/>
+                        <outlet property="imageView" destination="sd4-pZ-T6d" id="hWa-Mz-wXK"/>
+                        <outlet property="logoutButton" destination="qlT-BL-v2S" id="NfF-2Q-U3m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xO9-ky-507" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2177" y="26"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4ln-bB-4tq">
+            <objects>
+                <navigationController id="Rcp-KR-LbJ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="F8c-Xn-1N5">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Oxj-AI-LWZ" kind="relationship" relationship="rootViewController" id="bTa-vl-qtK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zPq-gC-uIL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1402" y="26"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="wellthon_logo" width="1125" height="344"/>
+        <namedColor name="primary_color">
+            <color red="0.0" green="0.52941176470588236" blue="0.75686274509803919" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
