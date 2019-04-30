@@ -26,4 +26,5 @@ See a live demo [here](https://youtu.be/QBt5-Dulbek).
 * Improve flexibility of animations and UI.
 * Allow user to make profile changes.
 * Save credentials using `CloudKit` to sync credentials between user's many devices.
+* Add unit tests.
 
